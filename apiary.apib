@@ -1,0 +1,34 @@
+FORMAT: 1A
+HOST: http://13.125.161.124:9999/newapi
+
+# Simple LCC API
+
+This is LCC API Test.
+
+## LCC API Collection [/searchFareSchedule]
+
+### searchFareSchedule [POST]
+
+스케줄 조회
+
++ Request (application/json)
+
+        {
+            "request": {
+                "tripType": "RT",
+                "fromCity": "ICN",
+                "toCity": "SIN",
+                "fromDate": "2018-05-11",
+                "returnDate": "2018-05-18",
+                "cabinClass": "",
+                "airline": "",
+                "connectCount": 0,
+                "adultNumber": 1,
+                "childNumber": 1,
+                "infantNumber": 1,
+                "currency" : "KRW",
+                "promotionCode" : ""
+            }
+        }
+
++ Response 200 (application/json)
